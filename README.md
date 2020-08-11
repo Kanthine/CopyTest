@@ -220,7 +220,7 @@ mDict_3  :
 `copy`|浅拷贝，类似于ARC下的指针赋值|深拷贝，得到一个可变对象|浅拷贝
 `mutableCopy`|深拷贝，得到一个可变对象|深拷贝，得到一个可变对象|浅拷贝
 
-####3、`NSString` 类型的属性修饰符
+#### 3、`NSString` 类型的属性修饰符
 
 什么时候使用 `copy` 修饰 `NSString` 类型的属性？什么时候使用 `strong` 修饰 `NSString` 类型的属性？
 
@@ -230,7 +230,7 @@ mDict_3  :
 @property (nonatomic ,copy) NSString *cString;
 ```
 
-####3.1、赋值`NSMutableString`常量
+#### 3.1、赋值`NSMutableString`常量
 
 ```
 {
@@ -279,7 +279,7 @@ cString   : Mutable String : 0x600002135d40 : 0x7fad5cf0d808 : 1
 * 由于变量`cString`属于深拷贝，不被 `mString` 的操作影响；
 * `strong` 修饰的变量仍然指向原有内存，值不改变；
 
-####3.2、赋值`NSString`常量
+#### 3.2、赋值`NSString`常量
 
 ```
 {        
